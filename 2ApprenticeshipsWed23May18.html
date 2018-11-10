@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="../css/ip-style.css"/>
+<title>Interactive Podcast</title>
+
+
+     </head>
+     <body>
+	 <div class="top">
+         <div class="header">
+    
+            <a href="" class="logo">Interactive <span>Podcast</span></a>
+             <div class="title">Apprenticeships</div>
+             <a href="" class="menu"></a>
+         </div>
+		 
+         <div class="player">
+             <div class="player-controls">
+                 <button class="back btn" id="backButton"></button>
+                 <button class="main btn play" id="mainButton"></button>
+                 <button class="forward btn" id="forwardButton"></button>
+             </div>
+             <div class="audio-control">
+                 <div class="audio-bar">
+                     <div class="progress" id="timeline">
+					 
+					 
+					 </div>
+                     <div class="progress-head" id="playhead"></div>
+                 </div>
+                 <audio id="sound" src="" type="audio/mpeg" preload="auto"></audio>
+                 <!-- <input id="mute" /> -->
+             </div>
+
+		</div>
+				
+         </div>
+         <div class="illustration">
+             <iframe id="illustration-content" src=""  autostart="0" autoplay="0"  scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+         </div>
+ 
+ 
+ 
+         <script src="../js/main.js"></script>
+         <script type="text/javascript">
+
+
+
+
+// This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 2.0 UK: England & Wales Licence.
+// Bill Shaw June 2015 (with thanks to @kcodeuk @code4thekingdom and Harlow College)
+//2ApprenticeshipsWed23May18  
+//changelog 2ApprenticeshipsWed23May18  padlet summary added   (30)    10ApprenticeshipsSat6Jan18  re-timed; Screengrab15 deleted     2ApprenticeshipsWed3Jan18   4RadiojobsSat30Dec17   thumbnail images deleted (visible in Opera)    2RadiojobsSat30Dec17   Screengrab 50 repeated so user doesn't get an error message if they click forward on the last image     8RadiojobsSat16Dec17  css amended (all centred, rounded corners at top) images pre-called   6RadiojobsSun3Dec17  new audio   2RadiojobsSat2Dec17   new audio   2RadiojobsSat9Sep17      overflow;auto removed from css; now works in Safari   48RadiojobsSun13Aug17 css for smartphone uses hv and hw 36RadiojobsSat12Aug17   css for smartphone amended    iFrame 2 deleted   2RadiojobsSat8July17 intro changed   10AtheismMon1May17 1st URL called directly; 2nd [p], 3rd [q]     2AtheismMon1May17 updated image changed back to tarrymin; seeker min and max decreased      2AtheismSun16Apr17  audio html amended to include ogg vorbis    2AtheismSun26Feb17   new audio 44AtheismSun19Feb17   css for mobile amended  12AtheismSat18Feb17   Updated image taken from tarraymax rather than tarry min in seeker, skip forward and skip back  4AtheismFri17Feb17  mobile css amended   intros changed    2AtheismMon16Jan17  updateProgress();  reloated to correct place in playthrough function     10AtheismSun1Jan17   iFrame 3 removed     2AtheismSun1Jan17  code tidied up    34AtheismSat31Dec16  detects length of podcast; top mobile width increased to 99%    24AtheismSat31Dec16   arrays amended   20ApprenticeFri30Dec16  screengrab array amended to provide code template   2ApprenticeFri30Dec16  top css amended for mobiles     4ApprenticeWed28Dec16   mobile css amended - width 98%, logo height 15%       4ApprenticeThu22Dec16  html pages replaced by Screengrab pages   4ApprenticeSun11Dec16  css for tablet amended    2ApprenticeSun11Dec16  mobile images amended    2ApprenticeSat10Dec16   image urls changed to ../Design/       2ApprenticeWed30Nov16  uploaded   image urls changed      26ApprenticeFri25Nov16  intro amended        22ApprenticeFri25Nov16 scrollbars removed in iframes; icons open new windows; 14AtheismSun23Oct16  retimed  design included; audio is now 28Aug16  2AtheismSun16Oct16  position removed from iFrames   cc has link   span id=one included   2AtheismSat30Jan16  global and local vars labelled    Pause flag (flag 1) used to decide whether to go to Playafterseeking in display  
+
+
+
+
+
+         var time = [0,0.1,19,98,142,211,228,600000
+         ];
+         var image = [ "../start/intro.html","Screengrab1.html", "Screengrab5.html", "Screengrab10.html", 
+             "Screengrab20.html",  "Screengrab25.html", "Screengrab30.html","Screengrab30.html","Screengrab35.html", "Screengrab40.html", "Screengrab45.html", "Screengrab50.html","Screengrab50.html",
+             "Screengrab55.html", "Screengrab60.html", "Screengrab65.html", "Screengrab70.html", "Screengrab75.html", "Screengrab80.html",
+             "Screengrab85.html", "Screengrab90.html", "Screengrab95.html", "Screengrab100.html", "Screengrab105.html", "Screengrab110.html",
+             "Screengrab115.html", "Screengrab120.html", "Screengrab125.html", "Screengrab130.html", "Screengrab135.html", "Screengrab140.html",
+             "Screengrab145.html", "Screengrab150.html", "Screengrab155.html", "Screengrab160.html", "Screengrab165.html", "Screengrab170.html",
+         ];
+         var audioSrc = "content/ApprenticeThu24Nov16.mp3";
+         initPage(time, image, audioSrc);
+         </script>
+     </body>
+
+</html>
