@@ -1,0 +1,312 @@
+		  * {
+    box-sizing: border-box;
+}
+
+  html, body {height: 97%; width: 99%;}
+       
+
+
+@media all and (max-width: 768px){
+
+body {
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+}
+
+.top{	 border-style: solid; 
+	 border-radius: 0.5vw; 
+	border-color: #25B2B2;
+}
+
+.header {
+    background: #25B2B2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw;
+
+}
+
+.header > .logo {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8em;
+    padding-right: 4vw;
+}
+
+.header > .logo span {
+    color: #002f2f;
+}
+
+.header > .title {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.3em;
+    padding-right: 16vw;
+}
+
+
+ .header > .menu {
+     position: relative;
+     width: 10vw;
+     border-top: 1vh solid white;
+     border-bottom: 1vh solid white;
+     height: 4vh;
+ }
+ 
+ .header > .menu:before {
+     content: "";
+     position: absolute;
+     top: 0.5vh;
+     width: 100%;
+     border-top: 1vh solid #fff;
+ }
+ 
+ .player {
+    display: flex;
+    background: #002F2F;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    height: 6vh;
+    width: 6vw;
+    padding-right: 6vw;
+    border: none;
+}
+
+
+
+.btn.play {cursor: pointer;
+    background: no-repeat center/100% url(../assets/play.svg)
+}
+.btn.pause {cursor: pointer;
+    background: no-repeat center/100% url(../assets/pause.svg)
+}
+.btn.back {cursor: pointer;
+    background: no-repeat center/50% url(../assets/prev.svg)
+}
+.btn.forward {cursor: pointer;
+    background: no-repeat center/50% url(../assets/next.svg)
+}
+
+/* Audio Bar */
+
+.audio-bar {cursor: pointer;
+    position: relative;
+    height: 5vh;
+    min-width: 60vw;
+    margin: 0vw 5vw;
+}
+.progress {
+    position: absolute;
+    bottom: 2vh;
+    height: 0.6vh;
+    width: 100%;
+    background: #fff;
+}
+.progress-head {
+    position: absolute;
+    top:2vh;
+    
+    height: 1.5vh;
+    width: 2vw;
+    border-radius: 2vw;
+    background: lightgray;
+}
+
+
+.progress-width{
+	    position: absolute;
+    top:2vh;
+    
+    height: 1.5vh;
+    width: 2vw;
+    border-radius: 2vw;
+	background:  #25B2B2;
+	
+	
+	
+}
+
+.illustration {
+	    -webkit-flex: 1; /* Safari 6.1+ */
+    -ms-flex: 1; /* IE 10 */ 
+    display: flex;
+    flex: 1;
+}
+
+#illustration-content {
+    flex: 1 100%;
+    border: none;
+    height: 80vh;
+}
+
+#illustration-content2 {
+    flex: 1 100%;
+    border: none;
+    height: 80vh;
+}
+}
+
+@media all and (min-width: 769px){
+body {
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+}
+
+.top{	 
+ 
+
+border-style: solid; 
+	 border-radius: 0.7vw; 
+	border-color: #25B2B2;
+
+}
+
+
+.header {
+    background: #25B2B2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw;
+
+}
+
+.header > .logo {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding-right: 4vw;
+}
+
+.header > .logo span {
+    color: #002f2f;
+}
+
+.header > .title {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.3em;
+    padding-right: 16vw;
+}
+
+
+ .header > .menu {
+     position: relative;
+     width: 6vw;
+     border-top: 1vh solid white;
+     border-bottom: 1vh solid white;
+     height: 4vh;
+ }
+ 
+ .header > .menu:before {
+     content: "";
+     position: absolute;
+     top: 0.5vh;
+     width: 100%;
+     border-top: 1vh solid #fff;
+ }
+ 
+ .player {
+    display: flex;
+    background: #002F2F;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.btn {
+    height: 8vh;
+    width: 6vw;
+    padding-right: 6vw;
+    border: none;
+}
+
+
+
+.btn.play {cursor: pointer;
+    background: no-repeat center/100% url(../assets/play.svg)
+}
+.btn.pause {cursor: pointer;
+    background: no-repeat center/100% url(../assets/pause.svg)
+}
+.btn.back {cursor: pointer;
+    background: no-repeat center/50% url(../assets/prev.svg)
+}
+.btn.forward {cursor: pointer;
+    background: no-repeat center/50% url(../assets/next.svg)
+}
+
+/* Audio Bar */
+
+.audio-bar {cursor: pointer;
+    position: relative;
+    height: 5vh;
+    min-width: 50vw;
+    margin: 0vw 5vw;
+}
+.progress {
+    position: absolute;
+    bottom: 2vh;
+    height: 0.6vh;
+    width: 100%;
+    background: #fff;
+}
+.progress-head {
+    position: absolute;
+    top:2vh;
+    
+    height: 1.5vh;
+    width: 1.2vw;
+    border-radius: 2vw;
+    background: lightgray;
+}
+
+
+.progress-width{
+	   position: absolute;
+    top:3vh;
+    
+    height: 0.6vh;
+    width: 1.2vw;
+    border-radius: 2vw;
+	background:  #25B2B2;
+	
+	
+	
+}
+
+
+
+.illustration {
+    display: flex;
+	    -webkit-flex: 1; /* Safari 6.1+ */
+    -ms-flex: 1; /* IE 10 */ 
+    flex: 1;
+
+}
+
+#illustration-content {
+    flex: 1 100%;
+    border: none;
+    height: 78vh;
+}
+
+#illustration-content2 {
+    flex: 1 100%;
+    border: none;
+    height: 78vh;
+}
+}
